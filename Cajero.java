@@ -5,18 +5,16 @@ public class Cajero {
     public Cajero(String nombre) {
         this.nombre = nombre;
     }
-
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     public void procesarCompra(Cliente cliente, long timeStamp) {
 
-            System.out.println("La cajera " + this.nombre +
+            System.out.println("El cajero " + this.nombre +
                     " COMIENZA A PROCESAR LA COMPRA DEL CLIENTE " + cliente.getNombre() +
                     " EN EL TIEMPO: " + (System.currentTimeMillis() - timeStamp) / 1000	+
                     "seg");
@@ -28,7 +26,7 @@ public class Cajero {
                         "seg");
             }
 
-            System.out.println("La cajera " + this.nombre + " HA TERMINADO DE PROCESAR " +
+            System.out.println("El cajero " + this.nombre + " HA TERMINADO DE PROCESAR " +
                     cliente.getNombre() + " EN EL TIEMPO: " +
                     (System.currentTimeMillis() - timeStamp) / 1000 + "seg");
 
